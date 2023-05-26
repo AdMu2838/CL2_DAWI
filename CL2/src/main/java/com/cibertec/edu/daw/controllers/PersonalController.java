@@ -21,7 +21,7 @@ public class PersonalController {
     }
 
     @GetMapping("/lista")
-    public String getPersonalList(@RequestParam(name = "codigoArea", required = false) Integer codigoArea, Model model) {
+    public String getPersonalList(@RequestParam(name = "codigo", required = false) Integer codigoArea, Model model) {
         List<Personal> personalList;
 
         if (codigoArea != null) {
