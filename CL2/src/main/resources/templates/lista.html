@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Personal</title>
+    
+</head>
+<body>
+    <h1>Lista de Personal</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Código Trabajador</th>
+            <th>Sueldo</th>
+            <th>Área</th>
+            <th>Jefe de Área</th>
+        </tr>
+        <th:block th:each="personal : ${personalList}">
+            <tr>
+                <td th:text="${personal.id}"></td>
+                <td th:text="${personal.nombre}"></td>
+                <td th:text="${personal.codigoTrabajador}"></td>
+                <td th:text="${personal.sueldo}"></td>
+                <td th:text="${personal.area.nombreArea}"></td>
+                <td th:text="${personal.area.jefeArea}"></td>
+            </tr>
+        </th:block>
+    </table>
+</body>
+</html>
