@@ -1,4 +1,4 @@
-package com.cibertec.daw.controllers;
+package com.cibertec.edu.daw.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -13,7 +13,7 @@ import java.util.List;
 
 @Controller
 public class PersonalController {
-    private final PersonalService personalService;
+	private final PersonalService personalService;
 
     @Autowired
     public PersonalController(PersonalService personalService) {

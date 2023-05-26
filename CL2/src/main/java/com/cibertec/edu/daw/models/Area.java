@@ -35,6 +35,6 @@ public class Area implements Serializable {
     @Column(name = "AREA_JEFE")
     String jefeArea;
 
-    @OneToMany(mappedBy = "AREA")
+    @OneToMany(mappedBy = "area")
     List<Personal> personalList;
 }
